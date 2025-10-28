@@ -16,24 +16,24 @@ Treinamento de modelos reutilizáveis e salvamento para uso em produção.
 --> COMO USAR
 
 1. Instalar dependências
-
-npm install
 --
-2. Gerar datasets
+npm install
 
+2. Gerar datasets
+--
 node gerar_dataset.js           # Dataset de classificação
 node gerar_dataset_regressao.js # Dataset para regressão ROT
---
-3. Treinar modelos
 
+3. Treinar modelos
+--
 node train.js                  # Treinamento do classificador
 node train_regressor_skit.js   # Treinamento da regressão linear
---
-4. Rodar o servidor
 
-node server.js
+4. Rodar o servidor
 --
+node server.js
 
 Acessar no navegador
-Abra http://localhost:3000 E insira seu texto criptografado para ver o resultado da classificação e do shift (quando aplicável).
 --
+Abra http://localhost:3000 E insira seu texto criptografado para ver o resultado da classificação e do shift (quando aplicável).
+
