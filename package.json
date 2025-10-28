@@ -1,0 +1,24 @@
+{
+  "name": "projeto-cript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gerar_dataset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "body-parser": "^2.2.0",
+    "cli-progress": "^3.12.0",
+    "express": "^5.1.0",
+    "scikitjs": "^1.24.0",
+    "tailwindcss": "^4.1.16"
+  }
+}

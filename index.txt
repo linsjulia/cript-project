@@ -1,0 +1,18 @@
+
+
+<!-- index.html -->
+<input id="kw" placeholder="Digite o texto">
+<button id="btn">Enviar</button>
+<div id="out"></div>
+<script>
+document.getElementById('btn').onclick = async () => {
+  const t = document.getElementById('kw').value;
+  const r = await fetch('/predict', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text: t })
+  });
+  const j = await r.json();
+  document.getElementById('out').innerText = `Padrão: ${j.label}, Confiança: ${j.confidence}`;
+};
+</script>
